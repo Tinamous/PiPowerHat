@@ -8004,9 +8004,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <sheet>
 <plain>
 <text x="289.56" y="20.32" size="1.778" layer="94" ratio="15">Drawn by:</text>
-<text x="289.56" y="16.51" size="1.778" layer="94" ratio="15">Checked  by:</text>
-<text x="289.56" y="5.08" size="1.778" layer="94">FLYFISH TECHNOLOGIES d.o.o.</text>
-<text x="309.88" y="20.32" size="1.778" layer="94">Ivan Zilic</text>
+<text x="289.56" y="15.24" size="1.778" layer="94">Stephen Harrison.
+Pi Hat original by Ivan Zilic</text>
 <text x="374.65" y="5.08" size="2.54" layer="94" ratio="10">v0.1</text>
 <text x="170.18" y="223.52" size="1.27" layer="97">SOIC 8 temp sensor to monitor PCB/Ambient.</text>
 <text x="297.18" y="223.52" size="1.27" layer="97">External DB18B20 to monitor ambient</text>

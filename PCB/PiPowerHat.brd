@@ -191,7 +191,7 @@
 <wire x1="44" y1="1" x2="43" y2="0" width="0" layer="20" curve="-90"/>
 <wire x1="46" y1="1" x2="47" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="64" y1="23.5" x2="51.1" y2="23.5" width="0" layer="20"/>
-<wire x1="51.1" y1="21" x2="64" y2="21" width="0" layer="20"/>
+<wire x1="51.1" y1="21" x2="64.1" y2="21" width="0" layer="20"/>
 <wire x1="51.1" y1="23.5" x2="50.165" y2="22.6425" width="0" layer="20" curve="90"/>
 <wire x1="50.165" y1="22.6425" x2="50.165" y2="21.8075" width="0" layer="20"/>
 <wire x1="50.165" y1="21.8075" x2="51.1" y2="21" width="0" layer="20" curve="90"/>
@@ -213,10 +213,12 @@ Max</text>
 <text x="64.4525" y="9.8425" size="1.27" layer="25" rot="R180">DS18B20</text>
 <text x="48.895" y="6.35" size="1.27" layer="25">DS18B20</text>
 <wire x1="64" y1="23.5" x2="65" y2="24.5" width="0" layer="20" curve="90"/>
-<wire x1="64" y1="21" x2="64.1" y2="21" width="0" layer="20"/>
 <wire x1="64.1" y1="21" x2="65" y2="20.1" width="0" layer="20" curve="-90"/>
-<dimension x1="0" y1="53" x2="65" y2="50.6" x3="32.5" y3="61.7" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="62" y1="56" x2="62" y2="0" x3="71.4" y3="28" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="0" y1="53" x2="65" y2="50.6" x3="32.5" y3="61.7" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="62" y1="56" x2="62" y2="0" x3="71.4" y3="28" textsize="1.27" layer="47" dtype="vertical"/>
+<text x="42.6" y="2" size="1.778" layer="25" rot="R90">S.Harrison
+12 Dec. 2016</text>
+<text x="9.4" y="1.1" size="1.778" layer="25">V1</text>
 </plain>
 <libraries>
 <library name="FLYFISH">
