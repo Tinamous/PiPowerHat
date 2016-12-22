@@ -7908,7 +7908,9 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <parts>
 <part name="K1" library="FLYFISH" deviceset="PIN20X2" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="U1" library="FLYFISH" deviceset="EEPROM24" device=""/>
+<part name="U1" library="FLYFISH" deviceset="EEPROM24" device="">
+<attribute name="FARNELL" value="2463718"/>
+</part>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="M0805" value="3k9">
 <attribute name="TOLERANCE" value="5%"/>
@@ -8009,6 +8011,7 @@ Pi Hat original by Ivan Zilic</text>
 <text x="374.65" y="5.08" size="2.54" layer="94" ratio="10">v0.1</text>
 <text x="170.18" y="223.52" size="1.27" layer="97">SOIC 8 temp sensor to monitor PCB/Ambient.</text>
 <text x="297.18" y="223.52" size="1.27" layer="97">External DB18B20 to monitor ambient</text>
+<text x="43.18" y="203.2" size="1.778" layer="97">CAT24C64QI-GT3</text>
 </plain>
 <instances>
 <instance part="K1" gate="G$1" x="50.8" y="152.4" rot="R180"/>
@@ -8016,6 +8019,7 @@ Pi Hat original by Ivan Zilic</text>
 <instance part="U1" gate="G$1" x="50.8" y="215.9" smashed="yes">
 <attribute name="NAME" x="48.26" y="224.79" size="1.778" layer="95"/>
 <attribute name="VALUE" x="43.18" y="205.74" size="1.778" layer="96"/>
+<attribute name="FARNELL" x="50.8" y="215.9" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND10" gate="1" x="60.96" y="121.92"/>
 <instance part="R1" gate="G$1" x="68.58" y="223.52" smashed="yes" rot="R90">
