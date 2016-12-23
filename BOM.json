@@ -27,7 +27,7 @@ parts: [
 {'name':'U4', 'value':'DS18B20+', 'case':'TO-92', 'FarnellPart':'2515553', 'price':3.37 ,'comment':'Off board, qty 0-n'},
 {'name':'U5', 'value':'DS18B20Z+', 'case':'SOIC8', 'FarnellPart':'1379772', 'price':3.30},
 
-{'name':'F1', 'value':'3A Polyfuse PTC 2920', 'FarnellPart':'1822231', 'price':0.583},
+{'name':'F1', 'value':'3A Polyfuse PTC 2920', 'case':'2920' 'FarnellPart':'1822231', 'price':0.583, 'AltFarnellPart':'1961502'},
 
 {'name':'K1', 'value':'40 Contact (20x2) 2.54mm Board to board connector','MfgPartNo':'2-534206-0', 'FarnellPart':'2310167', 'price':1.97},
 {'name':'J1', 'value':'Terminal Block Header 2 Pos', 'FarnellPart':'2493689', 'price':0.0769},
