@@ -1,0 +1,41 @@
+{
+'Version':'1.0',
+'Product':'Pi Power Hat',
+parts: [
+
+{'name':'R1', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
+{'name':'R2', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
+{'name':'R3', 'value':'1k', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9332383','2129113'], 'price':0.0009},
+{'name':'R4', 'value':'0R100 3W Current Sense resistor', case: '2512', 'FarnellPart':'1435952', 'price':0.416},
+{'name':'R5', 'value':'10k', case: '0805', 'FarnellPart':['9332391','2129195'], 'MfgPartNo':'MC01W0805110k', 'price':0.0009},
+{'name':'R6', 'value':'10k', case: '0805', 'FarnellPart':['9332391','2129195'], 'MfgPartNo':'MC01W0805110k', 'price':0.0009},
+{'name':'R7', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
+{'name':'R8', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
+{'name':'R9', 'value':'4k7', case: '0805', 'FarnellPart':['9333266','2129167'], 'MfgPartNo':'MC01W080514k7', 'price':0.0009},
+
+{'name':'C1', 'value':'0.1uF', case: '0805', 'FarnellPart':['1759167','2310668', '2310707'], 'price':0.0045},
+{'name':'C2', 'value':'1uF - 36V (24V if current sensor uses VIN)', case: '0805', 'FarnellPart':['',''], 'price':0},
+{'name':'C3', 'value':'1uF', case: '0805', 'FarnellPart':['2320853','2310412'], 'price':0.0095},
+{'name':'C4', 'value':'1uF', case: '0805', 'FarnellPart':['2320853','2310412'], 'price':0.0095, 'comment':'Optional - used if smoothing is needed'},
+{'name':'C5', 'value':'1uF', case: '0805', 'FarnellPart':['2320853','2310412'], 'price':0.0095},
+{'name':'C6', 'value':'0.1uF', case: '0805', 'FarnellPart':['1759167','2310668', '2310707'], 'price':0.0045},
+{'name':'C7', 'value':'0.1uF', case: '0805', 'FarnellPart':['1759167','2310668', '2310707'], 'price':0.0045},
+
+{'name':'IC1', 'value':'7805 Buck Converter', case: '', 'FarnellPart':'', 'price':0.00, 'comment':'Buy from eBay'},
+{'name':'U1', 'value':'CAT24C64 SOIC 8', case: '', 'FarnellPart':'2463718', 'price':0.27, 'comment':'Optional if you don't want the Pi to know of the hat'},
+{'name':'U2', 'value':'INA219 Current Sensor SOIC8', 'FarnellPart':'2496402', 'price':2.07},
+{'name':'U4', 'value':'DS18B20+', 'case':'TO-92', 'FarnellPart':'2515553', 'price':3.37 ,'comment':'Off board, qty 0-n'},
+{'name':'U5', 'value':'DS18B20Z+', 'case':'SOIC8', 'FarnellPart':'1379772', 'price':3.30},
+
+{'name':'F1', 'value':'3A Polyfuse PTC 2920', 'FarnellPart':'1822231', 'price':0.583},
+
+{'name':'K1', 'value':'40 Contact (20x2) 2.54mm Board to board connector','MfgPartNo':'2-534206-0', 'FarnellPart':'2310167', 'price':1.97},
+{'name':'J1', 'value':'Terminal Block Header 2 Pos', 'FarnellPart':'2493689', 'price':0.0769},
+{'name':'J1a', 'value':'Terminal Blocl, Pluggable 2 Pos, 12 Way', 'FarnellPart':'2493637', 'price':0.224},
+{'name':'J2', 'value':'3 Pin Header / Molex', 'FarnellPart':'588581', 'price':0.0666 },
+{'name':'J2b', 'value':'3 Pin Crimp Housing', 'FarnellPart':'143127', 'price':0.177 },
+{'name':'J3', 'value':'4 Pin Header / Molex', 'comment': 'Optional - used for Pi Display' },
+
+{'name':'.', 'value':'M2.5 11MM brass Hex M-F Standoff', 'qty':'4', 'FarnellPart':'2494583', 'price':0},
+{'name':'.', 'value':'M2.5 6mm Machine Screw', 'qty':'4', 'FarnellPart':'1420388', 'price':0.0187,},
+]}
