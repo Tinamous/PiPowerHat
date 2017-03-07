@@ -32,3 +32,5 @@ SparkFun - https://github.com/sparkfun/SparkFun-Eagle-Libraries
 DS18B20-SOIC - ??
 INA219 - Farnell
 
+See https://github.com/Tinamous/OctoPrint-PiPower for an OctoPrint plugin to monitor and control.
+
