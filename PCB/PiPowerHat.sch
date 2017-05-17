@@ -14466,6 +14466,8 @@ E.g. Filament sensor.
 <text x="259.08" y="157.48" size="1.27" layer="97">Some printers (Ultimaker etc) can vary the 
 lights between printing/not printing. 
 This might be useful as a trigger.</text>
+<text x="350.52" y="142.24" size="1.778" layer="97">BCM 18 (GPIO 18)</text>
+<text x="350.012" y="184.404" size="1.778" layer="97">BCM 13 (GPIO 13)</text>
 </plain>
 <instances>
 <instance part="K1" gate="G$1" x="50.8" y="152.4" rot="R180"/>
