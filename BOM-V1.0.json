@@ -1,5 +1,5 @@
 {
-'Version':'1.2',
+'Version':'1.0',
 'Product':'Pi Power Hat',
 parts: [
 
@@ -21,9 +21,7 @@ parts: [
 {'name':'C6', 'value':'0.1uF', case: '0805', 'FarnellPart':['1759167','2310668', '2310707'], 'price':0.0045},
 {'name':'C7', 'value':'0.1uF', case: '0805', 'FarnellPart':['1759167','2310668', '2310707'], 'price':0.0045},
 
-******
 {'name':'IC1', 'value':'7805 Buck Converter', case: '', 'FarnellPart':'', 'price':0.00, 'comment':'Buy from eBay'},
-
 {'name':'U1', 'value':'CAT24C64 SOIC 8', case: '', 'FarnellPart':'2463718', 'price':0.27, 'comment':'Optional if you don't want the Pi to know of the hat'},
 {'name':'U2', 'value':'INA219 Current Sensor SOIC8', 'FarnellPart':'2496402', 'price':2.07},
 {'name':'U4', 'value':'DS18B20+', 'case':'TO-92', 'FarnellPart':'2515553', 'price':3.37 ,'comment':'Off board, qty 0-n'},

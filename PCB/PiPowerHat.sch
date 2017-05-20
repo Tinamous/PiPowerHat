@@ -14374,8 +14374,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <sheet>
 <plain>
 <text x="289.56" y="20.32" size="1.778" layer="94" ratio="15">Drawn by:</text>
-<text x="289.56" y="15.24" size="1.778" layer="94">Stephen Harrison.
-Pi Hat original by Ivan Zilic</text>
+<text x="289.56" y="10.16" size="1.778" layer="94">Stephen Harrison.
+Pi Power Hat 
+Original HAT layout by Ivan Zilic</text>
 <text x="374.65" y="5.08" size="2.54" layer="94" ratio="10">v1.2</text>
 <text x="185.42" y="167.64" size="1.27" layer="97">SOIC 8 temp sensor to monitor PCB/Ambient.</text>
 <text x="203.2" y="205.74" size="1.27" layer="97">External DB18B20 to monitor ambient</text>
@@ -14420,14 +14421,7 @@ protection</text>
 <text x="134.62" y="66.04" size="1.27" layer="97">Base address 0x40
 NB: This is the same as HTU21D </text>
 <text x="134.62" y="58.42" size="1.27" layer="97">See: https://github.com/scottjw/subfact_pi_ina219</text>
-<text x="284.48" y="101.6" size="1.778" layer="97">Possible extra features:
-4) On-board string of Neopixel (or other) LEDs to light the printer
-6) GPIO (clk/data) for load cell (filament weight)?
-7) GPIO for NFC reader (I2C + reset)
-
-5, 6 &amp; 7 - seperate PCB by base of printer. </text>
 <text x="193.04" y="162.56" size="1.27" layer="97">GPIO4 is default for 1-Wire</text>
-<text x="309.88" y="134.62" size="1.27" layer="97">GPIO12/13 -&gt; Pins 32/33 -&gt; PWM0 and PWM1</text>
 <wire x1="312.42" y1="139.7" x2="375.92" y2="139.7" width="0.1524" layer="97"/>
 <wire x1="375.92" y1="139.7" x2="375.92" y2="180.34" width="0.1524" layer="97"/>
 <wire x1="375.92" y1="180.34" x2="312.42" y2="180.34" width="0.1524" layer="97"/>
@@ -14439,7 +14433,7 @@ NB: This is the same as HTU21D </text>
 <text x="312.42" y="248.92" size="1.778" layer="97">FAN Control</text>
 <text x="314.96" y="238.76" size="1.778" layer="97">3 Pin Fan</text>
 <text x="314.96" y="177.8" size="1.778" layer="97">4 Pin (PWM) Fan</text>
-<text x="312.42" y="243.84" size="1.778" layer="97">NB: Fan voltage must match supply voltage</text>
+<text x="312.42" y="243.84" size="1.778" layer="97" ratio="12">Fan voltage MUST match supply voltage</text>
 <wire x1="309.88" y1="137.16" x2="309.88" y2="254" width="0.1524" layer="97"/>
 <wire x1="309.88" y1="254" x2="378.46" y2="254" width="0.1524" layer="97"/>
 <wire x1="378.46" y1="254" x2="378.46" y2="137.16" width="0.1524" layer="97"/>
@@ -14456,7 +14450,6 @@ E.g. Filament sensor.
 <wire x1="7.62" y1="7.62" x2="281.94" y2="7.62" width="0.1524" layer="97"/>
 <wire x1="281.94" y1="7.62" x2="281.94" y2="48.26" width="0.1524" layer="97"/>
 <wire x1="281.94" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="97"/>
-<text x="289.56" y="88.9" size="1.27" layer="91">light sensor</text>
 <text x="10.16" y="93.98" size="1.27" layer="97">Also suitable for Adafruit small LCD display</text>
 <wire x1="256.54" y1="203.2" x2="307.34" y2="203.2" width="0.1524" layer="97"/>
 <wire x1="307.34" y1="203.2" x2="307.34" y2="147.32" width="0.1524" layer="97"/>
