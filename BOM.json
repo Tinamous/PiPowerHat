@@ -6,7 +6,7 @@ parts: [
 {'name':'R1', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
 {'name':'R2', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
 {'name':'R3', 'value':'1k', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9332383','2129113'], 'price':0.0009},
-{'name':'R4', 'value':'0R100 3W Current Sense resistor', case: '2512', 'FarnellPart':'1435952', 'price':0.416},
+{'name':'R4', 'value':'0R100 3W Current Sense resistor', case: '2512', 'FarnellPart':'1435952', 'price':0.556},
 {'name':'R5', 'value':'10k', case: '0805', 'FarnellPart':['9332391','2129195'], 'MfgPartNo':'MC01W0805110k', 'price':0.0009},
 {'name':'R6', 'value':'10k', case: '0805', 'FarnellPart':['9332391','2129195'], 'MfgPartNo':'MC01W0805110k', 'price':0.0009},
 {'name':'R7', 'value':'3k9', case: '0805', 'comment': 'optional if not fitting U1', 'FarnellPart':['9333169','2129160'], 'price':0.0008},
