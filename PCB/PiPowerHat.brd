@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.012" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.006" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
@@ -212,8 +212,8 @@
 <wire x1="64.1" y1="21" x2="65" y2="20.1" width="0" layer="20" curve="-90"/>
 <dimension x1="0" y1="53" x2="65" y2="50.6" x3="32.5" y3="61.7" textsize="1.27" layer="47" dtype="horizontal"/>
 <dimension x1="62" y1="56" x2="62" y2="0" x3="71.4" y3="28" textsize="1.27" layer="47" dtype="vertical"/>
-<text x="38.2463" y="31.932" size="1.6764" layer="26" font="vector" rot="MR0">S.Harrison
-27 Feb 2017</text>
+<text x="32.4551" y="29.7984" size="1.6764" layer="26" font="vector" rot="MR0">S.Harrison
+1 Aug 2017</text>
 <text x="50.5607" y="15.578" size="1.778" layer="25" font="vector">V1.2.1</text>
 <text x="27.94" y="49.53" size="1.27" layer="25" rot="R270">3v3</text>
 <text x="50.548" y="17.8513" size="1.778" layer="25" font="vector">Pi Power</text>
@@ -251,6 +251,7 @@ match input voltage.</text>
 <text x="35.9791" y="11.2014" size="0.8128" layer="25" rot="R270">GND</text>
 <text x="5.8039" y="42.8117" size="1.016" layer="25">+</text>
 <text x="1.7526" y="47.1043" size="0.8128" layer="25">GND</text>
+<text x="31.9552" y="34.6153" size="1.778" layer="26" font="vector" rot="MR0">Pi Power</text>
 </plain>
 <libraries>
 <library name="FLYFISH">
@@ -1267,10 +1268,10 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <attribute name="VALUE" x="19.556" y="10.2604" size="0.4064" layer="27"/>
 <attribute name="NAME" x="19.5719" y="10.6025" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0805-CAP" value="1.0uF 50v" x="36.9631" y="40.1195" smashed="yes" rot="R270">
-<attribute name="PROD_ID" value="CAP-11625" x="36.9631" y="40.1195" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="36.3599" y="41.7129" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="38.3479" y="38.5697" size="0.4064" layer="27" rot="R90"/>
+<element name="C2" library="SparkFun-Capacitors" package="0805-CAP" value="1.0uF 50v" x="38.5955" y="37.1033" smashed="yes" rot="R180">
+<attribute name="PROD_ID" value="CAP-11625" x="38.5955" y="37.1033" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="40.1889" y="37.7065" size="0.8128" layer="25" rot="R270"/>
+<attribute name="VALUE" x="37.0457" y="35.7185" size="0.4064" layer="27"/>
 </element>
 <element name="C3" library="SparkFun-Capacitors" package="0805-CAP" value="1.0uF" x="15.7307" y="34.3677" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-11625" x="15.7307" y="34.3677" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1325,6 +1326,7 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <element name="F1" library="switch-raychem" package="SMD050F" value="SMD050F" x="12.7" y="16.8275" smashed="yes" rot="R90">
 <attribute name="FARNELL" value="1822231" x="12.7" y="16.8275" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="15.2381" y="17.6258" size="0.8128" layer="27" rot="R180"/>
+<attribute name="FARNELL-NEW" value="1822225" x="12.7" y="16.8275" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R9" library="resistor" package="M0805" value="4k7" x="53.8861" y="8.509" smashed="yes" rot="R90">
 <attribute name="TOLERANCE" value="5%" x="53.8861" y="8.509" size="1.27" layer="27" rot="R90" display="off"/>
@@ -1378,10 +1380,11 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <attribute name="VALUE" x="40.9956" y="18.3896" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="JP4" library="SparkFun-Connectors" package="MOLEX-1X4" value="GPIO1" x="61.8744" y="45.4152" rot="R270"/>
-<element name="C10" library="SparkFun-Capacitors" package="EIA6032-NOM" value="10UF" x="9.7536" y="31.6992" smashed="yes" rot="R90">
+<element name="C10" library="SparkFun-Capacitors" package="EIA6032-NOM" value="100UF 10V" x="9.7536" y="31.6992" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CAP-12984" x="9.7536" y="31.6992" size="0.4064" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="10.3124" y="26.5684" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="10.414" y="32.0548" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="11.4808" y="31.9024" size="0.4064" layer="27" rot="R180"/>
+<attribute name="FARNELL" value="197180" x="9.7536" y="31.6992" size="0.8128" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U3" library="SparkFun-Sensors" package="TMB-6" value="TSL2561T" x="17.9832" y="47.244" rot="R180"/>
 <element name="C9" library="resistor" package="C0805K" value="100nF" x="20.4216" y="42.0624" smashed="yes" rot="R270">
@@ -1427,6 +1430,12 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <element name="D7" library="SparkFun-LED" package="LED-1206" value="" x="33.528" y="45.4152" smashed="yes">
 <attribute name="NAME" x="35.0774" y="46.8122" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="32.512" y="43.6372" size="0.4064" layer="27"/>
+</element>
+<element name="C8" library="SparkFun-Capacitors" package="EIA6032-NOM" value="10UF 35V" x="40.2336" y="40.8432" smashed="yes" rot="R180">
+<attribute name="PROD_ID" value="CAP-12984" x="40.2336" y="40.8432" size="0.8128" layer="27" rot="R180" display="off"/>
+<attribute name="FARNELL" value="197634" x="40.2336" y="40.8432" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.2468" y="38.354" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="40.1828" y="42.418" size="0.4064" layer="27" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -1570,6 +1579,9 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <via x="9.6647" y="25.6794" extent="1-16" drill="0.6"/>
 <via x="8.1407" y="24.1554" extent="1-16" drill="0.6"/>
 <via x="18.288" y="15.24" extent="1-16" drill="0.6"/>
+<contactref element="C8" pad="C"/>
+<via x="30.0863" y="36.3474" extent="1-16" drill="0.6"/>
+<via x="23.3807" y="48.6918" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U1" pad="8"/>
@@ -1740,8 +1752,9 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <contactref element="R15" pad="2"/>
 <contactref element="RG1" pad="IN@2"/>
 <contactref element="RG1" pad="IN@1"/>
-<wire x1="36.2712" y1="22.5552" x2="36.2712" y2="35.6616" width="1.6764" layer="1"/>
-<wire x1="36.2712" y1="35.6616" x2="34.1376" y2="37.7952" width="1.6764" layer="1"/>
+<wire x1="36.2712" y1="22.5552" x2="36.2712" y2="37.1856" width="1.6764" layer="1"/>
+<wire x1="36.2712" y1="37.1856" x2="36.2712" y2="37.7952" width="1.6764" layer="1"/>
+<wire x1="36.2712" y1="37.7952" x2="34.1768" y2="37.7952" width="1.6764" layer="1"/>
 <wire x1="34.1376" y1="37.7952" x2="34.1768" y2="37.7952" width="1.6764" layer="1"/>
 <wire x1="34.1768" y1="37.7952" x2="33.7312" y2="37.9592" width="1.6764" layer="1"/>
 <wire x1="33.7312" y1="37.9592" x2="33.7312" y2="38.7096" width="1.6764" layer="1"/>
@@ -1766,7 +1779,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="40.198" y1="16.4592" x2="40.198" y2="15.5448" width="0.4064" layer="1"/>
 <wire x1="40.198" y1="15.5448" x2="40.198" y2="15.3256" width="0.8128" layer="1"/>
 <wire x1="33.8309" y1="38.6099" x2="33.7312" y2="38.7096" width="0.6096" layer="1"/>
-<wire x1="36.9631" y1="39.2195" x2="34.1357" y2="39.2195" width="0.6096" layer="1"/>
 <wire x1="34.1357" y1="39.2195" x2="33.8309" y2="39.5243" width="0.6096" layer="1"/>
 <wire x1="40.198" y1="15.3256" x2="40.198" y2="16.4592" width="1.016" layer="1"/>
 <wire x1="40.198" y1="16.4592" x2="40.198" y2="21.6052" width="1.016" layer="1"/>
@@ -1786,6 +1798,11 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="33.7972" y1="16.1188" x2="34.4424" y2="16.764" width="1.016" layer="1"/>
 <wire x1="34.4424" y1="16.764" x2="34.4424" y2="20.1168" width="1.016" layer="1"/>
 <wire x1="34.4424" y1="20.1168" x2="34.1376" y2="20.4216" width="1.016" layer="1"/>
+<contactref element="C8" pad="A"/>
+<wire x1="37.7636" y1="40.8432" x2="33.9852" y2="40.8432" width="1.016" layer="1"/>
+<wire x1="33.9852" y1="40.8432" x2="33.7312" y2="40.5892" width="1.016" layer="1"/>
+<wire x1="37.6955" y1="37.1033" x2="36.3535" y2="37.1033" width="0.6096" layer="1"/>
+<wire x1="36.3535" y1="37.1033" x2="36.2712" y2="37.1856" width="0.6096" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U2" pad="4"/>
@@ -1798,19 +1815,10 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="24.13" y1="6.3475" x2="25.0825" y2="5.395" width="0.3048" layer="1"/>
 <wire x1="13.335" y1="48.387" x2="13.335" y2="50.7975" width="0.3048" layer="16"/>
 <wire x1="13.335" y1="50.7975" x2="13.45" y2="51.23" width="0.3048" layer="16"/>
-<wire x1="24.4475" y1="9.0813" x2="24.4475" y2="11.1379" width="0.3048" layer="1"/>
-<via x="24.4475" y="11.1379" extent="1-16" drill="0.6"/>
-<wire x1="24.4475" y1="11.1379" x2="24.4475" y2="24.0157" width="0.3048" layer="16"/>
 <contactref element="U3" pad="4"/>
 <wire x1="16.1832" y1="48.194" x2="15.726" y2="48.282" width="0.3048" layer="1"/>
 <contactref element="J5" pad="3"/>
 <wire x1="12.4206" y1="25.6794" x2="13.1064" y2="24.9936" width="0.3048" layer="16"/>
-<wire x1="13.1064" y1="24.9936" x2="23.4696" y2="24.9936" width="0.3048" layer="16"/>
-<wire x1="23.4696" y1="24.9936" x2="24.4475" y2="24.0157" width="0.3048" layer="16"/>
-<wire x1="15.748" y1="2.7432" x2="15.748" y2="10.2616" width="0.4064" layer="1"/>
-<wire x1="15.748" y1="10.2616" x2="16.764" y2="11.2776" width="0.4064" layer="1"/>
-<wire x1="16.764" y1="11.2776" x2="24.003" y2="11.2776" width="0.4064" layer="1"/>
-<wire x1="24.003" y1="11.2776" x2="24.4475" y2="11.1379" width="0.4064" layer="1"/>
 <wire x1="12.4206" y1="47.4726" x2="12.4206" y2="25.6794" width="0.3048" layer="16"/>
 <wire x1="12.4206" y1="47.4726" x2="13.335" y2="48.387" width="0.3048" layer="16"/>
 <wire x1="15.726" y1="48.282" x2="14.6592" y2="48.282" width="0.6096" layer="1"/>
@@ -1819,38 +1827,52 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="13.7922" y1="48.3108" x2="13.335" y2="48.768" width="0.3048" layer="1"/>
 <wire x1="13.335" y1="48.768" x2="13.335" y2="51.115" width="0.3048" layer="1"/>
 <wire x1="13.335" y1="51.115" x2="13.45" y2="51.23" width="0.3048" layer="1"/>
+<wire x1="13.1064" y1="24.9936" x2="15.24" y2="24.9936" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="24.9936" x2="15.8496" y2="24.384" width="0.3048" layer="16"/>
+<wire x1="15.8496" y1="24.384" x2="15.8496" y2="10.668" width="0.3048" layer="16"/>
+<via x="15.8496" y="10.668" extent="1-16" drill="0.6"/>
+<wire x1="24.13" y1="8.7638" x2="24.13" y2="10.3124" width="0.3048" layer="1"/>
+<wire x1="24.13" y1="10.3124" x2="23.7744" y2="10.668" width="0.3048" layer="1"/>
+<wire x1="23.7744" y1="10.668" x2="15.8496" y2="10.668" width="0.3048" layer="1"/>
+<wire x1="15.748" y1="2.7432" x2="15.748" y2="10.2616" width="0.3048" layer="1"/>
+<wire x1="15.748" y1="10.2616" x2="15.8496" y2="10.668" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U2" pad="3"/>
 <wire x1="22.86" y1="9.0138" x2="22.985" y2="8.8888" width="0.3048" layer="1"/>
 <contactref element="K1" pad="3"/>
 <contactref element="R7" pad="1"/>
-<wire x1="22.86" y1="5.715" x2="22.86" y2="8.7638" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="5.715" x2="22.86" y2="8.2296" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="8.2296" x2="22.86" y2="8.7638" width="0.3048" layer="1"/>
 <wire x1="22.86" y1="8.7638" x2="22.985" y2="8.8888" width="0.4064" layer="1"/>
 <wire x1="22.5425" y1="5.395" x2="22.86" y2="5.715" width="0.3048" layer="1"/>
 <wire x1="22.985" y1="8.8888" x2="22.985" y2="9.6881" width="0.3048" layer="1"/>
 <wire x1="11.1379" y1="25.1333" x2="11.1379" y2="50.3925" width="0.3048" layer="16"/>
 <wire x1="11.1379" y1="50.3925" x2="10.91" y2="51.23" width="0.3048" layer="16"/>
-<via x="22.985" y="9.6881" extent="1-16" drill="0.6"/>
 <contactref element="U3" pad="6"/>
 <wire x1="16.1832" y1="46.294" x2="15.5736" y2="46.3008" width="0.3048" layer="1"/>
 <contactref element="J5" pad="2"/>
 <wire x1="11.1379" y1="25.1333" x2="12.4968" y2="23.7744" width="0.3048" layer="16"/>
-<wire x1="12.4968" y1="23.7744" x2="22.5552" y2="23.7744" width="0.3048" layer="16"/>
-<wire x1="22.5552" y1="23.7744" x2="23.1648" y2="23.1648" width="0.3048" layer="16"/>
-<wire x1="23.1648" y1="23.1648" x2="23.1648" y2="10.1727" width="0.3048" layer="16"/>
-<wire x1="23.1648" y1="10.1727" x2="22.985" y2="9.6881" width="0.3048" layer="16"/>
-<wire x1="13.208" y1="2.7432" x2="13.208" y2="9.2456" width="0.4064" layer="1"/>
-<wire x1="13.208" y1="9.2456" x2="13.716" y2="9.7536" width="0.4064" layer="1"/>
-<via x="13.716" y="9.7536" extent="1-16" drill="0.6"/>
-<wire x1="13.716" y1="9.7536" x2="22.6147" y2="9.7536" width="0.4064" layer="16"/>
-<wire x1="22.6147" y1="9.7536" x2="22.985" y2="9.6881" width="0.4064" layer="16"/>
+<via x="13.2588" y="8.9916" extent="1-16" drill="0.6"/>
 <wire x1="15.5736" y1="46.3008" x2="14.964" y2="46.3008" width="0.6096" layer="1"/>
 <wire x1="14.964" y1="46.3008" x2="14.6304" y2="46.3296" width="0.4064" layer="1"/>
 <wire x1="14.6304" y1="46.3296" x2="13.8811" y2="46.3296" width="0.3048" layer="1"/>
 <wire x1="13.8811" y1="46.3296" x2="11.4427" y2="48.768" width="0.3048" layer="1"/>
 <wire x1="11.4427" y1="48.768" x2="11.4427" y2="50.3925" width="0.3048" layer="1"/>
 <wire x1="11.4427" y1="50.3925" x2="10.91" y2="51.23" width="0.3048" layer="1"/>
+<wire x1="12.4968" y1="23.7744" x2="13.1064" y2="23.7744" width="0.3048" layer="16"/>
+<wire x1="13.1064" y1="23.7744" x2="13.4112" y2="23.4696" width="0.3048" layer="16"/>
+<wire x1="13.4112" y1="23.4696" x2="13.4112" y2="9.4488" width="0.3048" layer="16"/>
+<wire x1="13.4112" y1="9.4488" x2="13.716" y2="8.8392" width="0.3048" layer="16"/>
+<wire x1="13.716" y1="8.8392" x2="22.2504" y2="8.8392" width="0.3048" layer="16"/>
+<wire x1="22.2504" y1="8.8392" x2="22.86" y2="8.2296" width="0.3048" layer="16"/>
+<via x="22.86" y="8.2296" extent="1-16" drill="0.6"/>
+<wire x1="22.86" y1="8.2296" x2="22.86" y2="9.5631" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="9.5631" x2="22.985" y2="9.6881" width="0.3048" layer="1"/>
+<wire x1="13.208" y1="2.7432" x2="13.208" y2="8.636" width="0.3048" layer="1"/>
+<wire x1="13.208" y1="8.636" x2="13.2588" y2="8.9916" width="0.3048" layer="1"/>
+<wire x1="13.4112" y1="9.4488" x2="13.4112" y2="9.144" width="0.3048" layer="16"/>
+<wire x1="13.4112" y1="9.144" x2="13.2588" y2="8.9916" width="0.3048" layer="16"/>
 </signal>
 <signal name="ID_SD">
 <contactref element="U1" pad="5"/>
@@ -2240,17 +2262,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <approved hash="18,29,09f91f0b1f7a0988"/>
 <approved hash="18,29,39fa2708271a39e8"/>
 <approved hash="18,29,b0a1417c33dff8b0"/>
-<approved hash="18,29,0bd2fb733b8bcb2a"/>
-<approved hash="18,29,002f38181f73e01f"/>
-<approved hash="18,29,18101814183a183e"/>
-<approved hash="18,29,d838591f786f5833"/>
-<approved hash="18,29,c50c8287d0dcaac9"/>
-<approved hash="18,29,e334f058460e4120"/>
-<approved hash="18,29,cd0cb4987cf330e9"/>
-<approved hash="18,29,e02ec8180cf3ec1e"/>
-<approved hash="18,29,300002fc02d2302e"/>
-<approved hash="18,29,ef180f3f080f2313"/>
-<approved hash="18,29,f50c8d98bc69d23f"/>
 <approved hash="18,29,30f64f9c2880a5f8"/>
 <approved hash="18,29,9d8f118cec8176f0"/>
 <approved hash="18,29,577029f2e92cfe7d"/>
@@ -2265,16 +2276,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <approved hash="18,29,79a06d770ef903b0"/>
 <approved hash="18,29,439cd43dcabc8274"/>
 <approved hash="18,29,531152e13b910893"/>
-<approved hash="18,29,cd3d2ccc53ebbf88"/>
-<approved hash="18,29,e25b481e0805a240"/>
-<approved hash="18,29,f7b254b914a2b7a9"/>
-<approved hash="18,29,7d87d2ca92d13d9c"/>
-<approved hash="18,29,71fedf659f7e31e5"/>
-<approved hash="18,29,7237daa7283b81fc"/>
-<approved hash="18,29,ed0f8ed93e5b4e0f"/>
-<approved hash="18,29,b1f4ea60a06ee5d6"/>
-<approved hash="18,29,950fd9c65402621d"/>
-<approved hash="18,29,84ffdae7dd5799c1"/>
 <approved hash="18,29,50b3c1bf2d6a4e70"/>
 <approved hash="18,29,b258905840d7e532"/>
 <approved hash="18,29,d399d011f1c07c45"/>
@@ -2292,13 +2293,144 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <approved hash="18,29,7b0e6dfc6de27b10"/>
 <approved hash="18,29,a1422ea7631b9e4c"/>
 <approved hash="18,29,4bc7553555264bd4"/>
-<approved hash="18,29,5d87b20af2111d9c"/>
-<approved hash="18,29,51febfa5ffbe11e5"/>
-<approved hash="18,29,d7b23479746297a9"/>
-<approved hash="18,29,c25b28de68c58240"/>
 <approved hash="18,29,b5d8604d32db86ca"/>
 <approved hash="4,16,df612f2e3499d3b6"/>
 <approved hash="4,16,31ef05ae1d713e50"/>
+<approved hash="18,29,2c622a3c5c1e3c2e"/>
+<approved hash="18,29,cdf0f500d3760c8e"/>
+<approved hash="18,29,13d4220fd30a43a4"/>
+<approved hash="18,29,25ce39003115c073"/>
+<approved hash="18,29,61515013f462d184"/>
+<approved hash="18,29,1dc023c023211d21"/>
+<approved hash="18,29,39e423e423f239f2"/>
+<approved hash="18,29,2cf8e9e0c2e9789d"/>
+<approved hash="18,29,8d13361336368d36"/>
+<approved hash="18,29,f8e6632fbc29c020"/>
+<approved hash="18,29,0c3fd2f5042e3064"/>
+<approved hash="18,29,accaef2e022706c0"/>
+<approved hash="18,29,acd5bd95d0e2b940"/>
+<approved hash="18,29,71f12107413f11c9"/>
+<approved hash="18,29,0bd2fb733b8bcb2a"/>
+<approved hash="18,29,7c355c9438992bca"/>
+<approved hash="18,29,d8687c078fa07ea1"/>
+<approved hash="18,29,9046f746db46556d"/>
+<approved hash="18,29,f1e8fdecfdfff1fb"/>
+<approved hash="18,29,3d36bc3c2c3a3e0f"/>
+<approved hash="18,29,4147714526fb89ae"/>
+<approved hash="18,29,f5d8f4d4f4c6f5ca"/>
+<approved hash="18,29,14a6a4bedb7e607d"/>
+<approved hash="18,29,6068045b40425283"/>
+<approved hash="18,29,f068eae8eafaf07a"/>
+<approved hash="18,29,002f38181f73e01f"/>
+<approved hash="18,29,18101814183a183e"/>
+<approved hash="18,29,d838591f786f5833"/>
+<approved hash="18,29,c50c8287d0dcaac9"/>
+<approved hash="18,29,cd0cb4987cf330e9"/>
+<approved hash="18,29,e334f058460e4120"/>
+<approved hash="18,29,e02ec8180cf3ec1e"/>
+<approved hash="18,29,300002fc02d2302e"/>
+<approved hash="18,29,ef180f3f080f2313"/>
+<approved hash="18,29,f50c8d98bc69d23f"/>
+<approved hash="18,29,257dab66c49f5cc5"/>
+<approved hash="18,29,9081f12a97d1f9f4"/>
+<approved hash="18,29,f630c431d8101230"/>
+<approved hash="18,29,b6bedf169870dcd6"/>
+<approved hash="18,29,d53fbf40d22628bf"/>
+<approved hash="18,29,3091f315f3143090"/>
+<approved hash="18,29,f2c108100730d2c0"/>
+<approved hash="18,29,b6a4c717d4349f95"/>
+<approved hash="18,29,cd303fced8ef2130"/>
+<approved hash="18,29,bd0fdc3f29266f6d"/>
+<approved hash="18,29,664107e88e371963"/>
+<approved hash="18,29,1061e2ede2ec1060"/>
+<approved hash="18,29,a24158d03c30ce40"/>
+<approved hash="18,29,e9a09df9c934c85b"/>
+<approved hash="18,29,5199d1c40774891b"/>
+<approved hash="18,29,73a2abc113aff9f2"/>
+<approved hash="18,29,bbef249f6babb2ad"/>
+<approved hash="18,29,ebe6560cb1524aaa"/>
+<approved hash="18,29,cfe61d8cc7d25baa"/>
+<approved hash="18,29,1c74a5e030929f44"/>
+<approved hash="18,29,0352322f80bf19aa"/>
+<approved hash="18,29,32ebd9b4e0114d38"/>
+<approved hash="18,29,32dbdb306ad1c528"/>
+<approved hash="18,29,8b875fcb6e817022"/>
+<approved hash="18,29,ee5c6726444c6181"/>
+<approved hash="18,29,aee3858d77b21f08"/>
+<approved hash="18,29,6d63cef919c94b91"/>
+<approved hash="18,29,994d2e832ef59ebb"/>
+<approved hash="18,29,cdade0b5d67842c0"/>
+<approved hash="18,29,c1637dce5acead18"/>
+<approved hash="18,29,ab3c57b6d6fc2568"/>
+<approved hash="18,29,0180e23ad3e14f55"/>
+<approved hash="18,29,cb1c46d94b42b8ba"/>
+<approved hash="18,29,7010f414f40a700e"/>
+<approved hash="18,29,04a22c4d90c2420b"/>
+<approved hash="18,29,1080fc35aac849ff"/>
+<approved hash="18,29,bfe8bf6cb885b801"/>
+<approved hash="18,29,1e3e37b269915e5b"/>
+<approved hash="18,29,f8366e4d5da07c1a"/>
+<approved hash="18,29,d117963ae121bc91"/>
+<approved hash="18,29,3d7cf836f20c2fb2"/>
+<approved hash="18,29,9da759595eb39a4d"/>
+<approved hash="18,29,d56da7f0b9bc7c84"/>
+<approved hash="18,29,cc837e3ab6090ef6"/>
+<approved hash="18,29,9c4287c27fb37180"/>
+<approved hash="18,29,69f03ffc422a05e4"/>
+<approved hash="18,29,126678407c05c214"/>
+<approved hash="18,29,e7c8cc378c54b9ed"/>
+<approved hash="18,29,72cf3257d865993c"/>
+<approved hash="18,29,e1c2c2db76f9e221"/>
+<approved hash="18,29,a23a9c7a99f10014"/>
+<approved hash="18,29,b1b1694f69bfb141"/>
+<approved hash="18,29,34aaf7e672831b36"/>
+<approved hash="18,29,f1b7f66b0417098d"/>
+<approved hash="18,29,ef80bbffd7ed9250"/>
+<approved hash="18,29,dc02a294209aac3e"/>
+<approved hash="18,29,7375fc8ce4897d06"/>
+<approved hash="18,29,a18ac4f6f924fd81"/>
+<approved hash="18,29,4d29309464818723"/>
+<approved hash="18,29,218e0d9420810282"/>
+<approved hash="18,29,4c8e0c3506206023"/>
+<approved hash="18,29,91eadfcae2cb6ea8"/>
+<approved hash="18,29,8d0ddbe5719d5d69"/>
+<approved hash="18,29,3a2b2d792d463a14"/>
+<approved hash="18,29,7ccbce9ce3482ea0"/>
+<approved hash="18,29,375ba0f9286ff84c"/>
+<approved hash="18,29,8f035b4921a67b13"/>
+<approved hash="18,29,37558432bf30664e"/>
+<approved hash="18,29,2bc1449344822bd0"/>
+<approved hash="18,29,6ecc9f690f948bf1"/>
+<approved hash="18,29,cf2e3e470a9189ee"/>
+<approved hash="18,29,4b9bc2941ab380b2"/>
+<approved hash="18,29,4b9bc29416f923d1"/>
+<approved hash="18,29,acf8617316f9c2ec"/>
+<approved hash="18,29,b6c0d835bab80b2c"/>
+<approved hash="18,29,b64d46e51b9199cb"/>
+<approved hash="18,29,cd3d2ccc53ebbf88"/>
+<approved hash="18,29,71fedf659f7e31e5"/>
+<approved hash="18,29,e25b481e0805a240"/>
+<approved hash="18,29,7d87d2ca92d13d9c"/>
+<approved hash="18,29,f7b254b914a2b7a9"/>
+<approved hash="18,29,67afe4e69676d734"/>
+<approved hash="18,29,be1e805e7e8f0e8c"/>
+<approved hash="18,29,d4a65a72c3020c2c"/>
+<approved hash="18,29,175ba83970810de8"/>
+<approved hash="18,29,147bd6b595dc16e8"/>
+<approved hash="18,29,8e879bb777f32969"/>
+<approved hash="18,29,91e9f9ebf9839181"/>
+<approved hash="18,29,7237daa7283b81fc"/>
+<approved hash="18,29,ed0f8ed93e5b4e0f"/>
+<approved hash="18,29,b1f4ea60a06ee5d6"/>
+<approved hash="18,29,950fd9c65402621d"/>
+<approved hash="18,29,84ffdae7dd5799c1"/>
+<approved hash="18,29,c25b28de68c58240"/>
+<approved hash="18,29,5d87b20af2111d9c"/>
+<approved hash="18,29,d7b23479746297a9"/>
+<approved hash="18,29,51febfa5ffbe11e5"/>
+<approved hash="18,29,629ce7b419f7eaeb"/>
+<approved hash="4,16,a98123423bbca513"/>
+<approved hash="4,16,3d80334d2bdf317e"/>
 </errors>
 </board>
 </drawing>

@@ -14038,6 +14038,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="switch-raychem" deviceset="SMD*F" device="" technology="050">
 <attribute name="FARNELL" value="1822231"/>
+<attribute name="FARNELL-NEW" value="1822225"/>
 </part>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="M0805" value="4k7">
@@ -14080,7 +14081,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="JP4" library="SparkFun-Connectors" deviceset="M04" device="POLAR" value="GPIO1"/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="10UF-25V-10%(SMT-TANT)" device="" value="10UF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="10UF-25V-10%(SMT-TANT)" device="" value="100UF 10V"/>
 <part name="U3" library="SparkFun-Sensors" deviceset="TSL2561" device="T"/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
@@ -14124,6 +14125,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </part>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="D7" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="10UF-25V-10%(SMT-TANT)" device="" value="10UF 35V">
+<attribute name="FARNELL" value="197634"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14231,6 +14235,7 @@ things from VIN and monitor current.</text>
 <wire x1="208.28" y1="48.26" x2="208.28" y2="7.62" width="0.1524" layer="97"/>
 <wire x1="208.28" y1="7.62" x2="165.1" y2="7.62" width="0.1524" layer="97"/>
 <wire x1="165.1" y1="7.62" x2="165.1" y2="48.26" width="0.1524" layer="97"/>
+<text x="203.2" y="203.2" size="1.27" layer="97">Alternative: MAX31820PARMCR+ (Farnell 2515556)</text>
 </plain>
 <instances>
 <instance part="K1" gate="G$1" x="50.8" y="152.4" rot="R180"/>
@@ -14345,6 +14350,7 @@ things from VIN and monitor current.</text>
 <instance part="GND17" gate="1" x="175.26" y="175.26"/>
 <instance part="F1" gate="G$1" x="124.46" y="129.54">
 <attribute name="FARNELL" x="124.46" y="129.54" size="1.27" layer="96" display="off"/>
+<attribute name="FARNELL-NEW" x="124.46" y="129.54" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="GND18" gate="1" x="226.06" y="22.86"/>
 <instance part="R9" gate="G$1" x="238.76" y="177.8" smashed="yes" rot="R90">
@@ -14468,6 +14474,9 @@ things from VIN and monitor current.</text>
 </instance>
 <instance part="GND25" gate="1" x="147.32" y="12.7"/>
 <instance part="D7" gate="G$1" x="147.32" y="25.4"/>
+<instance part="C8" gate="G$1" x="124.46" y="213.36">
+<attribute name="FARNELL" x="124.46" y="213.36" size="1.27" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14545,6 +14554,10 @@ things from VIN and monitor current.</text>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="116.84" y1="208.28" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="-"/>
+<wire x1="124.46" y1="208.28" x2="124.46" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="205.74" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
+<junction x="116.84" y="205.74"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -14886,6 +14899,10 @@ things from VIN and monitor current.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="215.9" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
+<pinref part="C8" gate="G$1" pin="+"/>
+<wire x1="124.46" y1="215.9" x2="124.46" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="218.44" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
+<junction x="116.84" y="218.44"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VIN-"/>
@@ -15267,13 +15284,18 @@ things from VIN and monitor current.</text>
 <approved hash="104,1,200.66,121.92,U2,VS,+3V3,,,"/>
 <approved hash="104,1,223.52,226.06,U4,VDD,+3V3,,,"/>
 <approved hash="104,1,200.66,185.42,U5,VCC,+3V3,,,"/>
+<approved hash="104,1,78.74,81.28,U3,VDD,+3V3,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
 <approved hash="113,1,32.7406,221.226,CFG,,,,,"/>
 <approved hash="113,1,106.003,129.735,J1,,,,,"/>
 <approved hash="113,1,179.663,222.445,J2,,,,,"/>
-<approved hash="113,1,152.722,161.29,D3,,,,,"/>
-<approved hash="113,1,354.556,200.66,Q2,,,,,"/>
-<approved hash="113,1,344.953,195.58,D1,,,,,"/>
+<approved hash="113,1,198.442,21.59,D3,,,,,"/>
+<approved hash="113,1,329.156,200.66,Q2,,,,,"/>
+<approved hash="113,1,319.553,195.58,D1,,,,,"/>
+<approved hash="113,1,331.696,144.78,Q4,,,,,"/>
+<approved hash="113,1,322.093,139.7,D4,,,,,"/>
+<approved hash="113,1,322.093,104.14,D5,,,,,"/>
+<approved hash="113,1,147.642,24.13,D7,,,,,"/>
 </errors>
 </schematic>
 </drawing>
