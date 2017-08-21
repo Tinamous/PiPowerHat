@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.012" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.006" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -252,6 +252,7 @@ match input voltage.</text>
 <text x="5.8039" y="42.8117" size="1.016" layer="25">+</text>
 <text x="1.7526" y="47.1043" size="0.8128" layer="25">GND</text>
 <text x="31.9552" y="34.6153" size="1.778" layer="26" font="vector" rot="MR0">Pi Power</text>
+<text x="47.8536" y="6.7056" size="1.27" layer="26" rot="MR90">https://github.com/Tinamous/PiPowerHat</text>
 </plain>
 <libraries>
 <library name="FLYFISH">
